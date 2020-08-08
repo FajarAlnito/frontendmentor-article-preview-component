@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+
+    <main>
+      <div class="container">
+        <div class="card">
+          <img class="card-img" src="./images/drawers.jpg" alt="drawers">
+          <div class="card-body">
+            <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h4>
+            <p class="article">
+              Ever been in a room and felt like something was missing? Perhaps 
+              it felt slightly bare and uninviting. I’ve got some simple tips 
+              to help you make any room feel complete.
+            </p>
+            <div class="author">
+              <img class="author-img" src="./images/avatar-michelle.jpg" alt="author">
+              <div class="info">
+                <p class="author-name">Michelle Appleton</p>
+                <p class="date">28 Jun 2020</p>
+              </div>
+              <div class="tooltip">
+                <span class="btn-share"><svg class="img-share" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path class="path"fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg></span>
+                <div class="tooltip-text">
+                  <span class="tooltip-share">SHARE</span>
+                  <div class="tooltip-icon">
+                    <span><img src="./images/icon-facebook.svg"></span>
+                    <span><img src="./images/icon-twitter.svg"></span>
+                    <span><img src="./images/icon-pinterest.svg"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">FajarAlnito</a>.
+      </div>
+    </main>
+      
+
+    <script>
+      const share = document.querySelector(".btn-share");
+      const tooltip = document.querySelector(".tooltip-text")
+      share.addEventListener("click", (click)=>{
+          if(tooltip.style.visibility === "visible"){
+            tooltip.style.visibility = "hidden";
+            document.querySelector(".btn-share").style.background="hsl(210, 46%, 95%)"
+            document.querySelector(".path").style.fill="#6E8098"
+          }else{
+            tooltip.style.visibility = "visible";
+            document.querySelector(".btn-share").style.background="hsl(217, 19%, 35%)"
+            document.querySelector(".path").style.fill="#ffffff"
+          }
+      })
+    </script>
+  </body>
+</html>
