@@ -89,11 +89,11 @@ main{
     padding-right: 10px;
     font-size: 12px;
     position: relative;
-    bottom: -30%;
+    bottom: -30vh;
     align-self: flex-end;
 }
 
-@media(max-width: 670px){
+@media(max-width: 375px){
     .card{
         display: inline-block;
         width: 90%;
@@ -116,19 +116,21 @@ main{
         align-items: center;
     }
     .attribution{
-        bottom: -15%;
+        bottom: -10vh;
     }
     .tooltip{
         .tooltip-text{
-            width:307.5px !important;
-            bottom: -37% !important;
-            margin-left: -255px !important;
+            width: 82vw !important;
+            bottom: -1.7vh !important;
+            margin-left: -68vw !important;
             height: 30px;
+            -webkit-box-pack: start !important;
+            -ms-flex-pack: start !important;
             justify-content: start !important;
+            border-radius: 0 0 10px 10px !important;
             &:after{
                 content: none !important;
             }
-            border-radius: 0 0 10px 10px !important;
         }
     }
     .btn-share{
