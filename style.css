@@ -42,7 +42,8 @@ main {
 }
 
 .card .card-img {
-  width: 100%;
+  width: 320px;
+  min-width: 240px;
   border-radius: 10px 0 0 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -128,13 +129,14 @@ main {
       align-self: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .card {
     display: inline-block;
     width: 90%;
   }
   .card .card-img {
     border-radius: 10px 10px 0px 0px;
+    width: 100%;
   }
   .card-body {
     padding: 30px 30px 10px 30px;

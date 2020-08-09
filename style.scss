@@ -27,7 +27,8 @@ main{
     word-wrap: break-word;
     box-shadow: 10px 15px 10px #00000044;
     .card-img{
-        width: 100%;
+        width: 320px;
+        min-width: 240px;
         border-radius: 10px 0 0 10px;
         object-fit: cover;
         object-position: center;
@@ -93,12 +94,13 @@ main{
     align-self: flex-end;
 }
 
-@media(max-width: 768px){
+@media(max-width: 375px){
     .card{
         display: inline-block;
         width: 90%;
         .card-img{
             border-radius: 10px 10px 0px 0px;
+            width: 100%;
         }
     }
     .card-body{
